@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  currentDate: string;
+
+  constructor() {
+    this.currentDate = new Date().toLocaleString();
+  }
 
 }

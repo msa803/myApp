@@ -1,17 +1,71 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      To Do
     </ion-title>
+    <ion-item lines="none">
+      <ion-label>
+        Today: 
+        <p> {{currentDate}}</p>
+      </ion-label>
+    </ion-item>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">To Do</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+<ion-list>
+  <ion-item>
+    <ion-label>
+      <h2>Wash Dishes</h2>
+<p class="list">Do by 04/05/23</p>
+<p class="list">Priority: Low</p>
+<p class="list">Difficulty: Low</p>
+</ion-label>
+<ion-checkbox labelPlacement="start"></ion-checkbox>
+<ion-button slot="end">
+  <ion-icon slot="icon-only" name="trash"></ion-icon>
+</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+    <h2>Vacuum</h2>
+    <p class="list">Do by 04/05/23</p>
+    <p class="list">Priority: Low</p>
+    <p class="list">Difficulty: Low</p>
+  </ion-label>
+  <ion-checkbox labelPlacement="start"></ion-checkbox>
+  <ion-button slot="end">
+    <ion-icon slot="icon-only" name="trash"></ion-icon>
+  </ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+        <h2>Taxes</h2>
+        <p class="list">Do by 04/10/23</p>
+        <p class="list">Priority: High</p>
+        <p class="list">Difficulty: Med</p>
+      </ion-label>
+      <ion-checkbox labelPlacement="start"></ion-checkbox>
+      <ion-button slot="end">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+          </ion-item>
+
+</ion-list>
+
+<ion-item>
+  <ion-button>
+    Add New Task
+  </ion-button>
+</ion-item>
+
 </ion-content>

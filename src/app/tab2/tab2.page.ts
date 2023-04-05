@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {InAppBrowser} from '@ionic-native/in-app-browser/ngx'
+
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,12 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(private inBrowser: InAppBrowser) {
+
+}
+
+opentab1(){
+  this.inBrowser.create("https://www.google.com",'_self');
+}
 
 }
